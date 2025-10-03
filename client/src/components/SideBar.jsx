@@ -36,7 +36,7 @@ const SideBar = () => {
         <div className='relative py-2 group'>
         <img onClick={() => setMenuOpen(!menuOpen)} src={assets.menu_icon} alt='menu' className='max-h-5'/>
         <div className={`absolute top-full right-0 z-20 w-32 p-5 rounded-md
-         bg-[#282142] border-gray-600 text-gray-100  ${menuOpen ? "block" : "hidden"} md:block`}>
+         bg-[#282142] border-gray-600 text-gray-100  ${menuOpen ? "block" : "hidden"} `}>
           <p onClick={()=>navigate('/profile')} className='cursor-pointer
           text-sm'>Edit Profile</p>
           <hr className='my-2 border-t border-gray-500'/>
