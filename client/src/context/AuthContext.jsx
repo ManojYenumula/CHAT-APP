@@ -92,7 +92,9 @@ const login = async (state, Credentials)=>{
     const connectSocket = (userData)=>{
         if(!userData || socket?.connected) return;
         const newSocket = io(backendURL,{
-            query:{userId:userData._id}
+            query:{
+                userId:userData._id,
+            }
         });
         newSocket.connect();
         setSocket(newSocket);
